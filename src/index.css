@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+    --font-sans: 'Lexend', sans-serif; /* Custom sans-serif font */
+    --color-darkblue: #002757;
+    --color-grey: #4c688a;
+    --color-brightblue: #0047c0;
+    --color-bluewhite:#d9e5f8;
+    --color-white: #ffffff;
+  }

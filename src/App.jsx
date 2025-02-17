@@ -1,9 +1,10 @@
 import React from "react";
+import RouterPath from "./router/RouterPath";
 
 function App() {
   return (
     <div>
-      <h1 class="text-3xl font-bold underline">Hello Devsentinel!</h1>
+      <RouterPath/>
     </div>
   );
 }
