@@ -12,6 +12,10 @@ import aboutImg from "./About.svg";
 import serviceImg1 from "./rb_1819.svg";
 import serviceImg2 from "./rb_2135.svg";
 import serviceImg3 from "./rb_5487.svg";
+import blog1 from "./blog1.webp"
+import blog2 from "./blog2.webp"
+import blog3 from "./blog3.webp"
+import blog4 from"./blog4.webp"
 
 export {
     logo,
@@ -28,4 +32,8 @@ export {
     serviceImg1,
     serviceImg2,
     serviceImg3,
+    blog1,
+    blog2,
+    blog3,
+    blog4,
 };

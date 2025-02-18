@@ -33,18 +33,22 @@ const Testimonial = () => {
           className="mt-8"
         >
           {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id} className="flex justify-center">
-              <div className="w-[320px] p-6 shadow-lg rounded-lg border-4 border-dashed border-blue-400">
-                <p className="italic text-lg text-gray-700">{testimonial.quote}</p>
-                <h3 className="mt-4 font-bold text-darkBlue">{testimonial.name}</h3>
-                <p className="text-sm text-blue-500">{testimonial.role}</p>
+            <SwiperSlide key={testimonial.id} className="flex justify-center mb-5">
+              <div className="flex justify-center items-center w-[350px] h-[250px] py-5 px-2 shadow-lg rounded-lg border-4 border-dashed border-primary">
+              <div className='flex flex-col justify-between bg-textGrey/10 rounded-2xl px-4 py-3 w-[300px] h-[200px]'>
+              <p className="italic text-lg text-gray-700">{testimonial.quote}</p>
+               <div>
+               <h3 className="mt-4 font-bold text-darkBlue">{testimonial.name}</h3>
+               <p className="text-sm text-blue-500">{testimonial.role}</p>
+               </div>
+              </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
 
         {/* View Testimonials Link */}
-        <div className="absolute bottom-[-20px] right-[150px] ">
+        <div className="absolute bottom-[-20px] right-[150px] mr-6">
           <a href="#" className="text-blue-500 underline text-sm">
             View Testimonials
           </a>

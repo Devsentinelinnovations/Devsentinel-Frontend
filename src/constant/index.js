@@ -1,4 +1,4 @@
-import { aws, cisco, microsoft, serviceImg1, serviceImg2, serviceImg3, zoom } from "../assets";
+import { aws, blog1, blog2, blog3, cisco, microsoft, serviceImg1, serviceImg2, serviceImg3, zoom } from "../assets";
 
 export const nav = [
     {
@@ -82,5 +82,29 @@ export const testimonials = [
         "“I gained the skills to land my dream job in Cybersecurity analysis”",
       name: "Ogunyinka Gbola",
       role: "Cybersecurity Analyst",
+    },
+  ];
+
+export const blogs = [
+    {
+      id: 1,
+      title: "5 Tips for Effective Online Learning",
+      description:
+        "Transform your study habits and achieve your academic goals with these essential techniques.",
+      image: blog1,
+    },
+    {
+      id: 2,
+      title: "5 Tips for Effective Online Learning",
+      description:
+        "Explore emerging trends and technologies are reshaping the digital landscape, driving, and enhancing user experiences.",
+      image: blog2,
+    },
+    {
+      id: 3,
+      title: "How to Choose the Right Career Path in Tech",
+      description:
+        "Navigate the diverse world of technology with insights and strategies to align your skills, interests, and goals for a fulfilling career.",
+      image: blog3,
     },
   ];

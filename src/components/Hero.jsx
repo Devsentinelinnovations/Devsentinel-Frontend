@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
-import { heroImg } from '../assets'
+import { heroIcon1, heroIcon2, heroIcon3, heroImg } from '../assets'
+import HeroTiles from './HeroTiles'
 
 const Hero = () => {
   return (
@@ -23,6 +24,7 @@ const Hero = () => {
                         <img src={heroImg} alt="a man with laptop" className='w-full h-auto' />
                     </div>
                 </div>
+                <HeroTiles/>
             </div>
         </div>
     </section>
