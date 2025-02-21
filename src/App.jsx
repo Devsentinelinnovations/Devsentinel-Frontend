@@ -8,6 +8,7 @@ import Faq from "./components/Faq";
 import Service from "./components/Service";
 import Blog from "./components/Blog";
 import RouterPath from "./router/RouterPath";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Testimonial/>
     <Blog/>
     <Faq/>
+    <Footer/>
     <RouterPath/>
     </div>
   );

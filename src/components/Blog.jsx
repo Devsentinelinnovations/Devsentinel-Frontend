@@ -1,5 +1,4 @@
-import React from 'react'
-import { blogs } from '../constant';
+import React from 'react';
 import { blog1, blog2, blog3 } from '../assets';
 
 

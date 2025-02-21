@@ -108,3 +108,21 @@ export const blogs = [
       image: blog3,
     },
   ];
+
+  export const faqs = [
+    {
+      id: 1,
+      question: "What is Dev Sentinels?",
+      answer: "Dev Sentinels is a platform that provides high-quality education and training for aspiring developers.",
+    },
+    {
+      id: 2,
+      question: "Where can I watch live videos?",
+      answer: "You can watch live videos on our official website and YouTube channel.",
+    },
+    {
+      id: 3,
+      question: "How much is a course in Dev Sentinels?",
+      answer: "Course prices vary depending on the program. Visit our website for detailed pricing.",
+    },
+  ];
