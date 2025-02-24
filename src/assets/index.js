@@ -1,4 +1,6 @@
 import logo from "./logo.svg";
+import illustration from "./ILLUSTRATION.svg";
+import illustration2 from "./ILLUSTRATION2.svg";
 import heroImg from "./College.svg";
 import heroIcon1 from "./zoom-icon.png";
 import heroIcon2 from "./online-education-icon.png";
@@ -21,6 +23,8 @@ export {
     logo,
     heroImg,
     heroIcon1,
+    illustration,
+    illustration2,
     heroIcon2,
     heroIcon3,
     arrow,
