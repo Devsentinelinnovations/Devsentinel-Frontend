@@ -7,7 +7,7 @@ function RouterPath() {
   return (
     <Router>
       <Routes>
-        <Route path="/#"/>
+        <Route index element={<LandingPage/>}/>
         <Route path="/landing" element={<LandingPage/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
