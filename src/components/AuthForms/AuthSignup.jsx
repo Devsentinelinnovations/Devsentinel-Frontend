@@ -106,7 +106,7 @@ function AuthSignup() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-brightblue text-white py-2.5 rounded-md hover:bg-blue-500 transition-all font-medium mt-6"
+              className="w-full bg-textBlue text-white py-2.5 rounded-md hover:bg-blue-500 transition-all font-medium mt-6"
             >
               Create account
             </button>
@@ -130,7 +130,7 @@ function AuthSignup() {
             Already have an account?{" "}
             <Link
               to="/login"
-              className="text-brightblue hover:underline font-medium"
+              className="text-textBlue hover:underline font-medium"
             >
               Sign in
             </Link>
