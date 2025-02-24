@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 function AuthSignup() {
   return (
-    <div className="min-h-screen w-full bg-white p-4">
-      <div className="mx-auto max-w-md w-full ">
+    <div className="min-h-screen w-full bg-white  flex items-center justify-center p-4">
+      <div className="mx-auto max-w-md w-full bg-white ">
         {/* Logo Section */}
         <div className="flex justify-center">
           <img src={assets.logo} alt="Logo" className="h-12 sm:h-12 md:h-14 w-auto" />

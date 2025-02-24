@@ -26,7 +26,7 @@ const Signup = () => {
       </div>
 
       {/* Right Side Form */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-6">
+      <div className="w-full md:w-1/2 flex ">
         <AuthSignup />
       </div>
     </div>
