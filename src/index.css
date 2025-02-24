@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@1,100..900&display=swap');
 @import "tailwindcss";
 
+
 @theme {
-    --font-sans: 'Lexend', sans-serif; /* Custom sans-serif font */
-    --color-darkblue: #002757;
-    --color-grey: #4c688a;
-    --color-brightblue: #0047c0;
-    --color-bluewhite:#d9e5f8;
-    --color-white: #ffffff;
+  --font-lexend: "Lexend", "serif";
+  --font-montserrat: "Montserrat", "sans-serif";
+  /* --breakpoint-3xl: 1920px; */
+  --color-primary: #0047c0;
+  --color-bg: #d9e5f8;
+  --color-textGrey: #4c688a;
+  --color-textBlue: #002757;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
   }
+}
+
+@layer components {
+  .section {
+    @apply py-12 md:py-16 w-full
+  }
+  .content {
+    @apply px-3 lg:px-14 container mx-auto
+  }
+}

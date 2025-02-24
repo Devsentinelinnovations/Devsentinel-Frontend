@@ -1,0 +1,71 @@
+Landing Page Resources
+All buttons and links (font- lexend, Font weight - Regular, 400 Size – 14px)
+
+Nav Bar (Font – Lexend, Font weight – Regular, 400   Size – 18px)
+
+Unlock Your Potential  with Dev Sentinel Innovations (Font – Lexend, Font weight – Bold, 700  Size – 64px)
+
+Empowering Businesses and Individuals with Cutting-Edge  Tech Solutions and Training .Join live classes, engage in  real-world projects, and discover your career path in tech.. 
+(Font – Lexend, Font weight – Regular, 400  Size – 18px)
+
+About Services Student's Testimonials Blogs Frequently Asked Questions
+(Font – Lexend, Font weight – Bold, 700  Size – 40px)
+
+At Dev Sentinels, we are dedicated to providing 
+high-quality education that prepares you for a 
+successful career in technology. Our experienced 
+instructors and hands-on projects ensure a 
+comprehensive learning experience
+ (Font – Lexend, Font weight – Regular, 400   Size – 24px)
+Learn More About Us
+
+Discover our most sought after services carefully curated 
+to meet the demands of Today’s clients
+(Font – Lexend, Font weight – Regular, 400   Size – 18px)
+
+Mobile App Development  Game Develoment Website Development
+(Font – Lexend, Font weight – Regular, 400   Size – 25px)
+
+Here’s what our students have to say about their transformative learning
+experience: Real stories, real growth. Discover fisrthand the 
+impact our courses have had on their lives.
+(Font – Lexend, Font weight – Regular, 400   Size – 18px)
+
+“Dev Sentinels transformed my career! The live classes and hands-on projects were invaluable”
+“Enrolling in courses at Dev sentinels was a
+game changer for
+me”
+“I gained the skills I needed to land my dream job in 
+CyberSecurity 
+analysis” 
+(Font – montserrat,italic Font weight – Regular, 400   Size – 18px)
+
+Timileyin Ogunsaya  Ajala Ademide   Ogunyinka Gbolahan
+(Font – Lexend, Font weight – Regular, 400   Size – 18px
+
+5 Tips for Effective Online Learning
+(Font – Lexend, Font weight –  BOLD, 700   Size – 18px)
+
+Transform your study habits and achieve 
+your academic goals with these essential 
+techniques.
+
+Explore emerging trends and technologies 
+are reshaping the digital landscape, driving 
+, and enhancing user experiences
+
+Navigate the diverse world of technology with
+ insights and strategies to align your skills, 
+interests, and goals for a fulfilling career.
+(Font – montserrat,italic Font weight – Regular, 400   Size – 16px)
+
+What is Dev sentinels?
+(Font – Lexend, Font weight – Regular, 400   Size – 24px)
+
+
+COLOURS
+DARK BLUE #002757
+GREY #4c688a
+Bright Blue #0047c0
+Blue-white #d9e5f8
+White #ffffff
