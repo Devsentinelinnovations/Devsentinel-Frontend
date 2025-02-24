@@ -1,6 +1,6 @@
 import React from 'react'
-import { serviceImg1, serviceImg2, serviceImg3 } from '../assets'
-import { services } from '../constant'
+import { serviceImg1, serviceImg2, serviceImg3 } from '../../assets'
+import { services } from '../../constant'
 
 const Service = () => {
   return (

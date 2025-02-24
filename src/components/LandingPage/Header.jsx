@@ -1,7 +1,8 @@
 import React from "react"
-import { logo } from "../assets"
-import { nav } from "../constant"
+import { logo } from "../../assets"
+import { nav } from "../../constant"
 import Button from "./Button"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -23,9 +24,13 @@ const Header = () => {
       </nav>
 
       <div className="flex items-center justify-center content-start gap-4">
-        <Button children="login"/>
-        <Button children="sign up" className="bg-white !text-black"/>
-      </div>
+      <Link to="/login">
+        <Button>Login</Button>
+      </Link>
+      <Link to="/signup">
+        <Button className="bg-white !text-black">Sign Up</Button>
+      </Link>
+    </div>
     </div>
    </header>
   )

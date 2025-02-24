@@ -1,5 +1,5 @@
 import React from 'react'
-import { heroIcon1, heroIcon2, heroIcon3 } from '../assets'
+import { heroIcon1, heroIcon2, heroIcon3 } from '../../assets'
 const HeroTiles = () => {
   return (
     <div >
