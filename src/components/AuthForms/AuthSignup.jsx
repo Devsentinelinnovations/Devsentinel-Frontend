@@ -1,8 +1,41 @@
-import React from "react";
+import React,{useState} from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
+import axios from "axios";  // Import axios
 
 function AuthSignup() {
+  const [message, setMessage] = useState("");
+  const [postData, setPostData] = useState({
+    first_name: '',
+    last_name: '',
+    email: '',
+    password: '',
+  }); 
+
+  const handleChange = (event) => {
+    setPostData({
+      ...postData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); 
+    // console.log(last_name);  
+    try {
+      const response = await axios.post("https://cors-anywhere.herokuapp.com/https://devsenti-dev.onrender.com/api/user/register/",postData);
+      if (response.ok) {
+        const result = await response.json();
+        setMessage(`Post Created! ID: ${result.id}`);
+      } else {
+        setMessage("Failed to create post.");
+      }
+    } catch (error) {
+      setMessage("Error submitting data.");
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <div className="min-h-screen w-full bg-white  flex items-center justify-center p-4">
       <div className="mx-auto max-w-md w-full bg-white ">
@@ -18,14 +51,14 @@ function AuthSignup() {
 
         {/* Form Section */}
         <div className="mt-6">
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             {/* Name Fields */}
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
               <div className="flex-1">
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   First name
                 </label>
-                <input
+                <input onChange={handleChange}
                   type="text"
                   name="firstName"
                   placeholder="Enter your first name"
@@ -37,7 +70,7 @@ function AuthSignup() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Last name
                 </label>
-                <input
+                <input onChange={handleChange}
                   type="text"
                   name="lastName"
                   placeholder="Enter your last name"
@@ -52,7 +85,7 @@ function AuthSignup() {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Username
               </label>
-              <input
+              <input onChange={handleChange}
                 type="text"
                 name="username"
                 placeholder="Choose a username"
@@ -66,7 +99,7 @@ function AuthSignup() {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Email
               </label>
-              <input
+              <input onChange={handleChange}
                 type="email"
                 name="email"
                 placeholder="Enter your email"
@@ -81,7 +114,7 @@ function AuthSignup() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Password
                 </label>
-                <input
+                <input onChange={handleChange}
                   type="password"
                   name="password"
                   placeholder="Enter your password"
