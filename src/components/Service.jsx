@@ -12,10 +12,10 @@ const Service = () => {
             Discover our most sought-after services carefully curated to meet the demands of today’s clients.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 justify-items-center mb-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 md:gap-12 lg:gap-18 justify-items-center mb-5">
           {services.map((service) => (
             <div key={service.id} className="flex flex-col items-center">
-            <div className="h-36 w-36 md:h-60 md:w-60 flex items-center justify-center rounded-full border-6 border-dashed border-yellow-400 p-4 mb-4">
+            <div className="h-36 w-36 md:h-52 md:w-52 lg:h-60 lg:w-60 flex items-center justify-center rounded-full border-6 border-dashed border-yellow-400 p-4 mb-4">
               <img src={service.img} alt="Mobile App Development" className="h-full object-contain" />
             </div>
             <div className='mt-4 bg-blue-400 px-6 py-4 text-center rounded-md'>

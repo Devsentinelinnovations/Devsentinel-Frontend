@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
-import heroImg from "./College.svg";
+import logo2 from "./Devwhite.png"
+import heroImg from "./College.svg";    
 import heroIcon1 from "./zoom-icon.png";
 import heroIcon2 from "./online-education-icon.png";
 import heroIcon3 from "./career-path-icon.png";
@@ -19,6 +20,7 @@ import blog4 from"./blog4.webp"
 
 export {
     logo,
+    logo2,
     heroImg,
     heroIcon1,
     heroIcon2,
