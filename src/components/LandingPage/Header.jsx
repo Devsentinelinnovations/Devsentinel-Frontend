@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { logo } from "../assets";
-import { nav } from "../constant";
+import { logo } from "../../assets";
+import { nav } from "../../constant";
 import Button from "./Button";
 import { Menu, X, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,6 +31,14 @@ const Header = () => {
           <button onClick={toggleMenu} className="text-textBlue">
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
+          <div className="flex items-center justify-center content-start gap-4">
+            <Link to="/login">
+              <Button>Login</Button>
+            </Link>
+            <Link to="/signup">
+              <Button className="bg-white !text-black">Sign Up</Button>
+            </Link>
+          </div>
         </div>
 
         <nav

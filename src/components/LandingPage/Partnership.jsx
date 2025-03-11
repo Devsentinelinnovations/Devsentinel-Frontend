@@ -1,5 +1,5 @@
 import React from 'react'
-import { partners } from '../constant'
+import { partners } from '../../constant'
 
 
 const Partnership = () => {

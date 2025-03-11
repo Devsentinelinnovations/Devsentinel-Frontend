@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import { heroImg } from '../assets'
+import { heroIcon1, heroIcon2, heroIcon3, heroImg } from '../../assets'
 import HeroTiles from './HeroTiles'
 
 const Hero = () => {

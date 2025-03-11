@@ -71,7 +71,7 @@ function AuthLogin() {
             <div className="px-4 md:px-6">
               <button
                 type="submit"
-                className="w-full bg-brightblue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
+                className="w-full bg-textBlue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-medium"
               >
                 Continue
               </button>
@@ -97,7 +97,7 @@ function AuthLogin() {
             Don't have an account? {""}
             <Link
               to={"/signup"}
-              className="text-brightblue cursor-pointer hover:underline"
+              className="text-textBlue cursor-pointer hover:underline"
             >
               Create account
             </Link>

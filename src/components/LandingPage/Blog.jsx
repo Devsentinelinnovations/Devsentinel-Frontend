@@ -1,5 +1,5 @@
 import React from 'react';
-import { blog1, blog2, blog3 } from '../assets';
+import { blog1, blog2, blog3 } from '../../assets';
 
 
 const Blog = () => {
