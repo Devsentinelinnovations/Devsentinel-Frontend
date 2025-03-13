@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Header from '../components/LandingPage/Header';
 import Hero from '../components/LandingPage/Hero';
 import Partnership from '../components/LandingPage/Partnership';
