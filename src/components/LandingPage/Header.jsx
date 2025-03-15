@@ -18,6 +18,10 @@ const Header = () => {
     setIsEducationOpen((prev) => !prev);
   };
 
+  const toggleCareer = () => {
+    setIsCareerHovered(!isCareerHovered)
+  }
+
   return (
     <header className="w-full py-10">
       <div className="content flex items-center justify-between gap-7">
@@ -31,14 +35,9 @@ const Header = () => {
           <button onClick={toggleMenu} className="text-textBlue">
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-          <div className="flex items-center justify-center content-start gap-4">
-            <Link to="/login">
-              <Button>Login</Button>
-            </Link>
-            <Link to="/signup">
-              <Button className="bg-white !text-black">Sign Up</Button>
-            </Link>
-          </div>
+          {/* <div className="flex items-center justify-center content-start gap-4">
+           
+          </div> */}
         </div>
 
         <nav
@@ -71,15 +70,16 @@ const Header = () => {
                 )}
 
                 {navs.text === "Education" && isEducationOpen && (
-                  <div className={`absolute left-0 top-full bg-white shadow-lg z-50 flex transition-all duration-300
-                     ${isCareerHovered ? "w-500px" : "w-250px"}`} 
-                  onMouseEnter={() => setIsEducationOpen(true)} 
-                  onMouseLeave={() => {setIsCareerHovered(false); setIsEducationOpen(false);}}>
+                  <div className={`absolute top-full  bg-white shadow-lg z-50 flex transition-all duration-300
+                     ${isCareerHovered ? "w-500px left-[-165px] md:left-0 " : "w-250px left-0"}`} 
+                     onMouseEnter={() => setIsEducationOpen(true)} 
+                     onMouseLeave={() => {setIsCareerHovered(false); setIsEducationOpen(false);}}>
                     <div className="w-1/2 p-4">
                       <ul>
                         <li
                           className="px-4 py-2 hover:text-primary text-base flex items-center justify-between cursor-pointer whitespace-nowrap"
                           onMouseEnter={() => setIsCareerHovered(true)}
+                          onClick={toggleCareer}
                           //  onMouseLeave={() => setIsCareerHovered(false)}
                         >
                           Career paths
@@ -113,15 +113,23 @@ const Header = () => {
             ))}
 
             <div className="flex flex-row justify-center lg:hidden w-full gap-4 mt-5">
-              <Button children="Login" />
-              <Button children="Sign up" className="bg-white !text-black" />
+            <Link to="/login">
+              <Button>Login</Button>
+            </Link>
+            <Link to="/signup">
+              <Button className="bg-white !text-black">Sign Up</Button>
+            </Link>
             </div>
           </ul>
         </nav>
 
         <div className="hidden lg:flex items-center justify-center content-start gap-4">
-          <Button children="login" />
-          <Button children="sign up" className="bg-white !text-black" />
+            <Link to="/login">
+              <Button>Login</Button>
+            </Link>
+            <Link to="/signup">
+              <Button className="bg-white !text-black">Sign Up</Button>
+            </Link>
         </div>
       </div>
     </header>
