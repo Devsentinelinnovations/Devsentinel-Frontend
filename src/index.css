@@ -10,6 +10,10 @@
   --color-bg: #d9e5f8;
   --color-textGrey: #4c688a;
   --color-textBlue: #002757;
+  --color-textHover:#d6e1f5;
+  --color-blue: #4c688a;
+  --color-blueHover: #0147c1;
+
 }
 
 @layer base {

@@ -13,8 +13,9 @@ const Hero = () => {
                     <p className='font-lexend font-normal text-[18px] leading-6 text-textGrey mb-10 max-w-[550px]'>Empowering Businesses and Individual with Cutting-Edge
                     Tech Solution and Training. Join live classes, engage in
                     real-world projects, and discover your career pathe in tech..</p>
-                    
-                    <Button children="Get Started" className=" py-3 px-10 ml-4"/>
+                     <Button className=" py-3 px-10 ml-4">
+                        Get Started
+                     </Button>
                 </div>
                 <div className='relative'>
                     <div className='flex justify-center items-center border-5 border-primary border-dashed w-[400px] h-[400px] p-2 rounded-full'>
