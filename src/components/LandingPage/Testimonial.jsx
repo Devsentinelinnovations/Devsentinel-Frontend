@@ -10,10 +10,10 @@ const Testimonial = () => {
   return (
     <section className="section bg-lightBlue py-12 text-darkBlue">
       <div className="relative content text-center">
-        <h2 className="font-lexend font-bold text-[32px] md:text-[40px] mb-3">
+        <h2 className="font-lexend font-bold text-[30px] md:text-4xl lg:text-[40px] mb-3">
           Student’s Testimonials
         </h2>
-        <p className="font-lexend max-w-[600px] mx-auto text-lg font-normal">
+        <p className="font-lexend max-w-[600px] mx-auto text-base lg:text-lg font-normal">
           Here’s what our students have to say about their transformative
           learning experience. Real stories, real growth. Discover firsthand
           the impact our courses have had on their lives.
@@ -22,7 +22,7 @@ const Testimonial = () => {
         {/* Swiper Carousel */}
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={50}
+          spaceBetween={30}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
@@ -34,14 +34,14 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id} className="flex justify-center mb-5">
-              <div className="flex justify-center items-center w-[350px] h-[250px] py-5 px-2 shadow-lg rounded-lg border-4 border-dashed border-primary">
-              <div className='flex flex-col justify-between bg-textGrey/10 rounded-2xl px-4 py-3 w-[300px] h-[200px]'>
-              <p className="italic text-lg text-gray-700">{testimonial.quote}</p>
-               <div>
-               <h3 className="mt-4 font-bold text-darkBlue">{testimonial.name}</h3>
-               <p className="text-sm text-blue-500">{testimonial.role}</p>
-               </div>
-              </div>
+              <div className="flex justify-center items-center w-[300px] h-[230px] md:w-[300px] md:h-[220px] lg:w-[280px] lg:h-[240px] xl:w-[350px] xl:h-[250px] py-5 px-2 shadow-lg rounded-lg border-4 border-dashed border-primary mb-5">
+                <div className='flex flex-col justify-between bg-textGrey/10 rounded-2xl px-4 py-3 w-[250px] h-[180px] lg:w-[300px] lg:h-[200px]'>
+                  <p className="italic text-base lg:text-lg text-gray-700">{testimonial.quote}</p>
+                    <div>
+                      <h3 className="mt-4 font-bold  text-darkBlue">{testimonial.name}</h3>
+                      <p className="text-sm text-blue-500">{testimonial.role}</p>
+                    </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}

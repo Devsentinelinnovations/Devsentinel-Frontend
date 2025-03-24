@@ -13,8 +13,8 @@ export const nav = [
     },
     {
         id: 3,
-        text: "Service",
-        link: "/service",
+        text: "Services",
+        link: "/services",
     },
     {
         id: 4,

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='section'>
         <div className='content'>
-            <div className='flex flex-col md:flex-row gap-10'>
+            <div className='flex flex-col lg:flex-row gap-10'>
                 <div className='flex flex-1 items-center justify-center'>
                 <div className='w-md md:w-lg h-auto'>
                     <img src={aboutImg} alt="Class Session" className='w-full h-auto'/>

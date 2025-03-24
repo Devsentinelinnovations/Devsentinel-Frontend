@@ -1,10 +1,11 @@
-import React from "react";
 import RouterPath from "./router/RouterPath";
+import React from "react";
+
 
 function App() {
   return (
     <div>
-    <RouterPath/>
+      <RouterPath/>
     </div>
   );
 }
