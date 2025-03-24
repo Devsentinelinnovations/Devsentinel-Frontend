@@ -1,57 +1,43 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
-function Sidebar() {
+import { FaTimes } from "react-icons/fa";
+
+function Sidebar({ isOpen, onClose }) {
   return (
-    <div className="top-4  ml-4 mt-4 w-50 h-150 rounded-3xl bg-white">
-      <div className="mt-18">
-        <div>
-          <ul className="space-y-8">
-            <div className="flex pl-4 hover:bg-textHover">
-              <img src={assets.dashboard} className="w-5 h-5 mt-1" alt="" />
-              <Link to={"/dashboard"}>
-                <li className=" font-bold text-lg pl-2 text-blue">
-                  Dashboard
-                </li>
+    <div
+      className={`fixed top-4 left-0 lg:ml-4 md:ml-1  rounded-3xl  w-[250px] h-screen bg-white shadow-md transform transition-all duration-300 ease-in-out z-50
+      ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:relative lg:translate-x-0 lg:w-[250px]`}
+    >
+      {/* Close Button - Only Visible on Small Screens */}
+      <button onClick={onClose} className="absolute top-4 right-4 text-gray-700 lg:hidden">
+        <FaTimes size={24} />
+      </button>
+
+      <div className="mt-20 px-4">
+        <ul className="space-y-8">
+          {[
+            { to: "/dashboard", label: "Dashboard", icon: assets.dashboard },
+            { to: "/dashboard/course", label: "Course Details", icon: assets.course },
+            { to: "/dashboard/message", label: "Messages", icon: assets.message },
+            { to: "/dashboard/notifications", label: "Notifications", icon: assets.notification },
+            { to: "/dashboard/library", label: "Library", icon: assets.library },
+          ].map((item, index) => (
+            <li key={index} className="flex space-x-3 hover:bg-textHover p-3 rounded-lg">
+              <img src={item.icon} className="w-6 h-6 mt-1" alt={item.label} />
+              <Link to={item.to} className="text-lg font-bold text-blue">
+                {item.label}
               </Link>
-            </div>
-            <div className="flex pl-4 hover:bg-textHover">
-              <img src={assets.course} className="w-5 h-5 mt-1" alt="" />
-              <Link to={"/dashboard/course"}>
-                <li className=" font-bold text-lg pl-2 text-blue">
-                  Course Details
-                </li>
-              </Link>
-            </div>
-            <div className="flex pl-4 hover:bg-textHover">
-              <img src={assets.message} className="w-5 h-5 mt-1" alt="" />
-              <Link to={"/dashboard/message"}>
-                <li className=" font-bold text-lg pl-2 text-blue">
-                  Messages
-                </li>
-              </Link>
-            </div>
-            <div className="flex pl-4 hover:bg-textHover ">
-              <img src={assets.notification} className="w-5 h-5 mt-1" alt="" />
-              <Link to={"/dashboard/notifications"}>
-                <li className="font-bold text-lg pl-2 text-blue">
-                  Notifications
-                </li>
-              </Link>
-            </div>
-            <div className="flex pl-4 hover:bg-textHover">
-              <img src={assets.library} className="w-5 h-5 mt-1" alt="" />
-              <Link to={"/dashboard/library"}>
-                <li className="font-bold text-lg pl-2 text-blue">
-                  Library
-                </li>
-              </Link>
-            </div>
-          </ul>
-          <div className="flex pl-4 mt-44 hover:bg-textHover">
-            <img src={assets.account} className="w-6 h-6 mt-1" alt="" />
-            <Link to={"/dashboard/profile"}>
-              <h3 className="font-bold text-xl pl-2  text-blue">Profile</h3>
+            </li>
+          ))}
+        </ul>
+
+        {/* Profile Section */}
+        <div className="mt-20 px-3">
+          <div className="flex items-center space-x-3 hover:bg-textHover p-3 rounded-lg">
+            <img src={assets.account} className="w-6 h-6" alt="Profile" />
+            <Link to={"/dashboard/profile"} className="text-lg font-bold text-blue">
+              Profile
             </Link>
           </div>
         </div>
