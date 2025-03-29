@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header({ onMenuToggle }) {
   return (
     <div className="bg-white ml-4 mr-8 mt-4 rounded-lg shadow-md p-4">
-      <nav className="flex items-center justify-between px-2">
+      <nav className="flex items-center justify-between px-2 font-lexend">
         {/* Menu Button (Visible on Mobile) */}
         <button className="lg:hidden text-gray-800 text-2xl" onClick={onMenuToggle}>
           <FaBars />

@@ -137,7 +137,7 @@ function AuthSignup() {
             </div>
 
             {/* Submit Button */}
-            <Link to={'/dashboard'}>
+            <Link to={'/verify-email'}>
               <button
                 type="submit"
                 className="w-full bg-textBlue text-white py-2.5 rounded-md hover:bg-blue-500 transition-all font-medium mt-6"
