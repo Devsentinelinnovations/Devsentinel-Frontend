@@ -40,8 +40,8 @@ function ResetPassword() {
 
   return (
     <div className="bg-[#d9e5f8]">
-        <div className="flex flex-col  items-center justify-center min-h-screen bg-gray-100">
-          <div className="bg-white  shadow-blue-200 shadow-xl py-4 font-lexend mx-2 md:mx-0 lg:mx-0 rounded-2xl px-18">
+        <div className="flex flex-col items-center justify-center min-h-screen ">
+          <div className="bg-white shadow-blue-200 shadow-xl py-4 font-lexend mx-2 md:mx-0 lg:mx-0 rounded-2xl px-18">
             <h2 className="text-center font-extrabold text-xl mt-4 text-[#4B6789]">Reset Password</h2>
             {/* Alert Message */}
             {alertMessage && (

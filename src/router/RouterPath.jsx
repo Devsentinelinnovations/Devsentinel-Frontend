@@ -12,6 +12,7 @@ import Profile from "../pages/Profile";
 import Library from "../pages/Library";
 import EmailVerification from "../components/AuthForms/EmailVerification";
 import ResetPassword from "../components/AuthForms/ResetPassword";
+import ForgotPassword from "../components/AuthForms/ForgotPassword";
 function RouterPath() {
   return (
     <Router>
@@ -20,9 +21,9 @@ function RouterPath() {
         <Route path="/landing" element={<LandingPage/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/verify-email" element={<EmailVerification />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-        
+        <Route path="/reset-password" element={<ResetPassword />} />     
         {/* dashboard routes */}
         <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
