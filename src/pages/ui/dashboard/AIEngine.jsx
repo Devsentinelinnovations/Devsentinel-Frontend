@@ -17,7 +17,7 @@ const AIEngine = () => {
             Attendance bar
           </p>
           <div className="flex justify-between">
-            <p className="text-primary text-2xl font-lexend ml-2">
+            <p className="text-primary text-xl font-lexend ml-2">
               30% to complete
             </p>
             <div className="flex items-center gap-2">
@@ -48,14 +48,14 @@ const AIEngine = () => {
               </div>
             </div>
             <div className="flex justify-between mt-5">
-              <span className="text-sm font-lexend text-textGrey underline">
+              <span className="text-[10px] font-lexend ml-4 text-textGrey underline">
                 I - Beginner
               </span>
-              <span className="text-sm font-lexend text-textGrey underline">
-                I - Beginner
+              <span className="text-[10px] font-lexend text-textGrey underline">
+                II - Intermediate
               </span>
-              <span className="text-sm font-lexend text-textGrey underline">
-                I - Beginner
+              <span className="text-[10px] font-lexend text-textGrey underline">
+                III - Expert
               </span>
             </div>
           </div>

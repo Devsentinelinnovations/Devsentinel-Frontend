@@ -66,13 +66,13 @@ export const testimonials = [
     {
       id: 1,
       quote:
-        "“Dev Sentinels transformed my career! The live classes and hands-on projects were invaluable”",
+        "“Devsentinels transformed my career! The live classes and hands-on projects were invaluable”",
       name: "Timileyin Ogunsaya",
       role: "Software Developer",
     },
     {
       id: 2,
-      quote: "“Enrolling in courses at Dev Sentinels was a game changer for me”",
+      quote: "“Enrolling in courses at Devsentinels was a game changer for me”",
       name: "Ademide Ajala",
       role: "UI Designer",
     },
@@ -112,8 +112,8 @@ export const blogs = [
   export const faqs = [
     {
       id: 1,
-      question: "What is Dev Sentinels?",
-      answer: "Dev Sentinels is a platform that provides high-quality education and training for aspiring developers.",
+      question: "What is Devsentinels?",
+      answer: "Devsentinels is a platform that provides high-quality education and training for aspiring developers.",
     },
     {
       id: 2,
@@ -122,7 +122,7 @@ export const blogs = [
     },
     {
       id: 3,
-      question: "How much is a course in Dev Sentinels?",
+      question: "How much is a course in Devsentinels?",
       answer: "Course prices vary depending on the program. Visit our website for detailed pricing.",
     },
   ];

@@ -13,7 +13,7 @@ const About = () => {
                 </div>
                 <div className='flex flex-1 justify-start items-start flex-col'>
                     <h2 className='font-lexend font-bold text-[32px] md:text-[40px] text-textBlue mb-3'>About</h2>
-                    <p className='font-lexend font-normal text-lg md:text-2xl text-textGrey mb-2'>At Dev Sentinels, we are dedicated to providing 
+                    <p className='font-lexend font-normal text-lg md:text-2xl text-textGrey mb-2'>At Devsentinels, we are dedicated to providing 
                         high-quality education that prepares you for a 
                         successful career in technology. Our experienced 
                         instructors and hands-on projects ensure a 
@@ -22,6 +22,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        
     </section>
   )
 }

@@ -9,7 +9,7 @@ const Hero = () => {
         <div className='content'>
             <div className='flex flex-col lg:flex-row justify-evenly mb-5'>
                 <div className='pt-5 max-lg:mb-30'>
-                    <h1 className='text-[40px] md:text-[60px] mb-5 font-lexend font-bold leading-13 md:leading-16 max-w-[680px] text-textBlue'>Unlock Your Potential with Dev Sentiel Innovations</h1>
+                    <h1 className='text-[40px] md:text-[60px] mb-5 font-lexend font-bold leading-13 md:leading-16 max-w-[680px] text-textBlue'>Unlock Your Potential with Devsentinel Innovations</h1>
                     <p className='font-lexend font-normal text-base md:text-lg leading-6 text-textGrey mb-10 max-w-[550px]'>Empowering Businesses and Individual with Cutting-Edge
                     Tech Solution and Training. Join live classes, engage in
                     real-world projects, and discover your career pathe in tech..</p>
