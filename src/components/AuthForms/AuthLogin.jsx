@@ -59,12 +59,14 @@ function AuthLogin() {
                   Remember me
                 </label>
               </div>
-              <button
-                type="button"
-                className="text-brightblue hover:text-blue-700 mt-2 md:mt-0"
-              >
-                Forgot password?
-              </button>
+              <Link to={"/forgot-password"} className="text-brightblue hover:text-blue-700">
+                <button
+                  type="button"
+                  className="text-brightblue hover:text-blue-700 mt-2 md:mt-0"
+                >
+                  Forgot password?
+                </button>
+              </Link>
             </div>
 
             {/* Submit Button */}

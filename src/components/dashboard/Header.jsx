@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header({ onMenuToggle }) {
   return (
     <div className="bg-white ml-4 mr-8 mt-4 rounded-lg shadow-md p-4">
-      <nav className="flex items-center justify-between px-6">
+      <nav className="flex items-center justify-between px-2 font-lexend">
         {/* Menu Button (Visible on Mobile) */}
         <button className="lg:hidden text-gray-800 text-2xl" onClick={onMenuToggle}>
           <FaBars />
@@ -22,7 +22,7 @@ function Header({ onMenuToggle }) {
           {/* User Info */}
           <div className="flex items-center space-x-2">
             <img src={assets.account2} className="w-6 h-6" alt="User" />
-            <h3 className="text-blue font-bold">Hello, Mike</h3>
+            <h3 className="text-blue  font-bold">Hello, Mike</h3>
           </div>
 
           {/* Notifications & Messages */}
