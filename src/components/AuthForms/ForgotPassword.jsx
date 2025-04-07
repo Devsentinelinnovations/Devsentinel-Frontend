@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function ForgotPassword() {
-  const [email, setEmail] = useState(""); // Added state for email
+  const [email, setEmail] = useState(""); 
 
   const handleNextClick = () => {
     if (!email) {
       alert("Please enter your email.");
       return;
-    }
-    // Here you can handle the logic for sending the OTP to the email   
+    }else(
+      alert("An OTP has been sent to your email."),
+      setTimeout(() => {
+        window.location.href = "/otp";
+      }, 3000) 
+    )
+    //  the logic for sending the OTP to the email   
   };
   return (
     <div className="bg-[#d9e5f8]">
