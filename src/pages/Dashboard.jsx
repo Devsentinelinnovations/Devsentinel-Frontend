@@ -1,10 +1,10 @@
 import React from "react";
-import AIEngine from "./ui/dashboard/AIEngine";
-import Learning from "./ui/dashboard/Learning";
-import Assignment from "./ui/dashboard/Assignment";
-import Assesment from "./ui/dashboard/Assesment";
-import Projects from "./ui/dashboard/Projects";
-import CalendarSection from "./ui/dashboard/CalendarSection";
+import AIEngine from "./../components/ui/dashboard/AIEngine";
+import Learning from "./../components/ui/dashboard/Learning";
+import Assignment from "./../components/ui/dashboard/Assignment";
+import Assesment from "./../components/ui/dashboard/Assesment";
+import Projects from "./../components/ui/dashboard/Projects";
+import CalendarSection from "./../components/ui/dashboard/CalendarSection";
 
 function Dashboard() {
   return (
