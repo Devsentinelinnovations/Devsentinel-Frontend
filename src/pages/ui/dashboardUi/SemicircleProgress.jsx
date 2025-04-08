@@ -7,7 +7,7 @@ const SemicircleProgress = ({ percentage }) => {
 
   return (
     <div
-      className="relative w-40 h-40"
+      className="relative w-36 h-36 md:w-32 md:h-32 xl:w-40 xl:h-40"
       role="progressbar"
       aria-valuenow={percentage}
       aria-valuemin="0"
@@ -38,7 +38,7 @@ const SemicircleProgress = ({ percentage }) => {
       </svg>
       {/* Center text */}
       <div className="absolute inset-0 bottom-[-50px] flex flex-col items-center justify-center">
-        <span className="text-xl text-primary font-bold underline">
+        <span className="text-lg xl:text-xl text-primary font-bold underline">
           {percentage}%
         </span>
         {/* <span className="text-sm text-gray-500">Achieved</span> */}
