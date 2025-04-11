@@ -1,13 +1,16 @@
 import React from "react";
-import AIEngine from "./ui/dashboard/AIEngine";
-import Learning from "./ui/dashboard/Learning";
-import Assignment from "./ui/dashboard/Assignment";
-import Assesment from "./ui/dashboard/Assesment";
+import AIEngine from "./../components/ui/dashboard/AIEngine";
+import Learning from "./../components/ui/dashboard/Learning";
+import Assignment from "./../components/ui/dashboard/Assignment";
+import Assesment from "./../components/ui/dashboard/Assesment";
+import Projects from "./../components/ui/dashboard/Projects";
+import CalendarSection from "./../components/ui/dashboard/CalendarSection";
 
 function Dashboard() {
   return (
     <main>
-      <div className="flex gap-5 ">
+      {/* Desktop view */}
+      <div className="hidden md:flex gap-5 ">
         {/* left section of the dashboard */}
         <div className="flex flex-col mb-3 gap-5 w-3/5">
           <AIEngine />
@@ -16,11 +19,19 @@ function Dashboard() {
         </div>
 
         {/* Right section of the dashboard */}
-        <div className="flex flex-col w-1/3 ">
+        <div className="flex flex-col gap-5 w-1/3 ">
           <Assesment />
-          <div></div>
-          <div></div>
+          <Projects />
+          <CalendarSection />
         </div>
+      </div>
+      {/* Mobile view */}
+      <div className="md:hidden flex flex-col mr-5 gap-5 mb-3">
+        <AIEngine />
+        <Assesment />
+        <Learning />
+        <Projects />
+        <CalendarSection />
       </div>
     </main>
   );

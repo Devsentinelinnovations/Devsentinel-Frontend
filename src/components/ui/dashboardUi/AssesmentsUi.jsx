@@ -7,7 +7,7 @@ const AssesmentsUi = ({ percentage }) => {
   const progress = (percentage / 100) * circumference; // Progress length
 
   return (
-    <div className="relative w-40 h-40 flex items-center justify-center">
+    <div className="relative w-40 h-40 md:w-32 md:h-32 xl:w-40 xl:h-40 flex items-center justify-center">
       <svg width="170" height="170" viewBox="0 0 100 100">
         {/* Background Circle */}
         <circle
