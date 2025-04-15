@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
-import Header from "./Header";
+
 
 const Layout = () => {
 
@@ -20,8 +20,8 @@ const Layout = () => {
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
           {/* Page Content */}
-          <Header onMenuToggle={handleMenuToggle}  />
-          <div className="pl-8 pt-16">
+          {/* <Header onMenuToggle={handleMenuToggle}  /> */}
+          <div className="pl-8 pt-2">
             <Outlet />
           </div>
         </div>

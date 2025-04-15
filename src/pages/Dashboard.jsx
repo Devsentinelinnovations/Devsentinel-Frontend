@@ -5,12 +5,14 @@ import Assignment from "./../components/ui/dashboard/Assignment";
 import Assesment from "./../components/ui/dashboard/Assesment";
 import Projects from "./../components/ui/dashboard/Projects";
 import CalendarSection from "./../components/ui/dashboard/CalendarSection";
+import Header from "../components/dashboard/Header";
 
 function Dashboard() {
   return (
     <main>
+      <Header/>
       {/* Desktop view */}
-      <div className="hidden md:flex gap-5 ">
+      <div className="mt-8 hidden md:flex gap-5 ">
         {/* left section of the dashboard */}
         <div className="flex flex-col mb-3 gap-5 w-3/5">
           <AIEngine />
