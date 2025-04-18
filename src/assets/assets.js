@@ -21,10 +21,14 @@ import goldStar2 from "./dashboard-assets/gold-star-icon2.svg";
 import goldStar3 from "./dashboard-assets/gold-star-icon3.svg";
 import googledocsIcon from "./dashboard-assets/google-docs-icon.svg";
 import uploadCloudIcon from "./dashboard-assets/upload-files-icon.svg";
+import linkedin from "./linkedin.png";
+import certificate from "./dashboard-assets/certificate.png";
 export const assets = {
   logo,
   github,
+  linkedin,
   google,
+  certificate,
   apple,
   illustration,
   illustration2,
