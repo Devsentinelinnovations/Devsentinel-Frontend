@@ -48,13 +48,22 @@ const InstructorProfile = () => {
             </div>
           </div>
         ) : (
-          <video
-            src="/video.mp4"
-            controls
-            autoPlay
-            className="w-full h-auto"
-            onEnded={() => setIsPlaying(false)}
-          />
+          <iframe
+            className="w-full aspect-video"
+            src="https://www.youtube.com/embed/dJmg4ODH0YY?autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen></iframe>
+
+          // For Local Video
+          // <video
+          //   src="/video.mp4"
+          //   controls
+          //   autoPlay
+          //   className="w-full h-auto"
+          //   onEnded={() => setIsPlaying(false)}
+          // />
         )}
       </div>
       <Button className="px-10 py-2 self-center hover:bg-primary/80 transition duration-300 ease-in-out">
