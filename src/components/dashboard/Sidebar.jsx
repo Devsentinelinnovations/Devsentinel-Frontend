@@ -1,9 +1,10 @@
 import React from "react";
 import { assets } from "../../assets/assets";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 function Sidebar({ isOpen, onClose }) {
+  const location = useLocation();
   return (
     <div
       className={`fixed top-4 left-0 lg:ml-4 md:ml-1  rounded-3xl  w-[250px] h-screen bg-white shadow-md transform transition-all duration-300 ease-in-out z-50
@@ -13,8 +14,10 @@ function Sidebar({ isOpen, onClose }) {
       <button onClick={onClose} className="absolute top-4 right-4 text-gray-700 lg:hidden">
         <FaTimes size={24} />
       </button>
-
-      <div className="mt-20 px-4">
+      <div>
+        <img src= {assets.logo} alt="" className="h-20 w-30 mx-6" />
+      </div>
+      <div className="mt-10 px-4">
         <ul className="space-y-8">
           {[
             { to: "/dashboard", label: "Dashboard", icon: assets.dashboard },
@@ -23,9 +26,11 @@ function Sidebar({ isOpen, onClose }) {
             { to: "/dashboard/notifications", label: "Notifications", icon: assets.notification },
             { to: "/dashboard/library", label: "Library", icon: assets.library },
           ].map((item, index) => (
-            <li key={index} className="flex space-x-3 hover:bg-textHover p-3 rounded-lg">
+            <li key={index} className={`flex space-x-3 hover:bg-textHover p-3 rounded-lg  ${location.pathname === item.to 
+                    ? 'bg-textHover text-white' 
+                    : 'hover:bg-textHover text-blue'}`}>
               <img src={item.icon} className="w-6 h-6 mt-1" alt={item.label} />
-              <Link to={item.to} className="text-lg font-bold text-blue">
+              <Link to={item.to} className="text-lg font-bold text-blue" >
                 {item.label}
               </Link>
             </li>

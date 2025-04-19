@@ -21,7 +21,7 @@ const Layout = () => {
         <div className="flex-1 flex flex-col">
           {/* Page Content */}
           {/* <Header onMenuToggle={handleMenuToggle}  /> */}
-          <div className="pl-8 pt-2">
+          <div className="md:pl-8 pt-2">
             <Outlet />
           </div>
         </div>
