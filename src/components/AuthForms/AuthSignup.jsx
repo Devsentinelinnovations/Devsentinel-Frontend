@@ -23,7 +23,7 @@ function AuthSignup() {
     e.preventDefault(); 
     // console.log(last_name);  
     try {
-      const response = await axios.post("https://cors-anywhere.herokuapp.com/https://devsenti-dev.onrender.com/api/user/register/",postData);
+      const response = await axios.post("https://devsenti-dev.onrender.com/api/user/register/",postData);
       if (response.ok) {
         const result = await response.json();
         setMessage(`Post Created! ID: ${result.id}`);
@@ -60,7 +60,7 @@ function AuthSignup() {
                 </label>
                 <input onChange={handleChange}
                   type="text"
-                  name="firstName"
+                  name="first_name"
                   placeholder="Enter your first name"
                   className="w-full px-3 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   required
@@ -72,7 +72,7 @@ function AuthSignup() {
                 </label>
                 <input onChange={handleChange}
                   type="text"
-                  name="lastName"
+                  name="last_name"
                   placeholder="Enter your last name"
                   className="w-full px-3 py-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                   required
@@ -137,14 +137,14 @@ function AuthSignup() {
             </div>
 
             {/* Submit Button */}
-            <Link to={'/verify-email'}>
+            {/* <Link to={'/verify-email'}> */}
               <button
                 type="submit"
                 className="w-full bg-textBlue text-white py-2.5 rounded-md hover:bg-blue-500 transition-all font-medium mt-6"
               >
                 Create account
               </button>
-            </Link>
+            {/* </Link> */}
           </form>
         </div>
 
