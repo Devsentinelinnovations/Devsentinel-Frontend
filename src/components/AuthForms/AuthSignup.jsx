@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 import axios from "axios";  // Import axios
+import api from "../../services/axios";
 
 function AuthSignup() {
   const [message, setMessage] = useState("");
@@ -21,9 +22,9 @@ function AuthSignup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); 
-    // console.log(last_name);  
+    console.log(import.meta.env.VITE_BACKEND_URL);  
     try {
-      const response = await axios.post("https://devsenti-dev.onrender.com/api/user/register/",postData);
+      const response = await api.post("/auth/register/", postData);
       if (response.ok) {
         const result = await response.json();
         setMessage(`Post Created! ID: ${result.id}`);

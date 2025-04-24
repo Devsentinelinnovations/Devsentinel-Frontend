@@ -26,10 +26,10 @@ function AuthLogin() {
     setError("");
 
     try {
-      const response = await axios.post(
-        "https://devsenti-dev.onrender.com/auth/login/",
-        formData
-      );
+      const response = await api.post("/auth/login/", {
+        email: formData.email,
+        password: formData.password,
+      })
 
       
       const { access_token, refresh_token, profile } = response.data;
