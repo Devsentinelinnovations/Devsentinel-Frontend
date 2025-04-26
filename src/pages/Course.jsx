@@ -32,6 +32,9 @@ function Course() {
         <Assignment />
         <DownloadCert />
       </div>
+      <div>
+      <Header/>
+    </div>
     </main>
   );
 }

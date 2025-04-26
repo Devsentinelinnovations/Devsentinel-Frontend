@@ -3,6 +3,12 @@ import github from "./github-sign.png";
 import google from "./google.png";
 import apple from "./apple.png";
 import logo from "./DevBlack.svg";
+import ver from "./ver.png";
+import submit from "./submit.png";
+import message3 from "./message3.png";
+import zoom from "./zoom2.png";
+
+// import delete from "./delete.png";
 import illustration from "./ILLUSTRATION.svg";
 import illustration2 from "./ILLUSTRATION2.svg";
 import account from "./dashboard-assets/account.svg";
@@ -30,6 +36,11 @@ export const assets = {
   google,
   certificate,
   apple,
+  ver,
+  submit,
+  message3,
+  zoom,
+  // delete,
   illustration,
   illustration2,
   message,
