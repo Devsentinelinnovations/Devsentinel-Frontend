@@ -26,7 +26,7 @@ const InstructorProfile = () => {
           </div>
         </div>
       </div>
-      <div className="border-4 border-primary overflow-hidden rounded-2xl w-[300px] h-[150px] md:w-[230px] md:h-[120px] xl:w-[350px] xl:h-[190px] self-center mb-6">
+      <div className="border-4 border-primary overflow-hidden rounded-2xl w-[300px] h-[150px] md:w-[230px] md:h-[120px] xl:w-[320px] xl:h-[170px] self-center mb-6">
         {!isPlaying ? (
           <div
             className="relative cursor-pointer"
